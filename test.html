@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .div1 {
+        border: 1px solid #ccc;
+        width: 200px;
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
     <h1>xing</h1>
-    <script src="./JS基础-异步/promise.js"></script>
-    <script>
+    <div class="div1" draggable="true"></div>
+    <input type="text" class="input1" />
+    <script src="./防抖和节流/throttle.js"></script>
+    <!-- <script src="./防抖和节流//throttle.js"></script> -->
+    <!-- <script src="./JS基础-异步/promise.js"></script> -->
+    <!-- <script>
       const p1 = new MyPromise((resolve, reject) => {
         setTimeout(() => {
           resolve(1222222200)
@@ -31,6 +42,6 @@
 
       // const p6 = MyPromise.all([p1, p2, p3, p4, p5])
       const p4 = MyPromise.race([p1, p2, p3]).then((data) => console.log(data))
-    </script>
+    </script> -->
   </body>
 </html>
